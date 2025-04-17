@@ -3,13 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <title>Portfólio - Webine</title>
 </head>
 <body>
-    <h1>Teste</h1>
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#topo">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#topo">Home</a>
+              <a class="nav-link" href="#trabalhos">Trabalhos</a>
+              <a class="nav-link" href="#quemSou">Quem sou</a>
+              <a class="nav-link" href="#contato">Contato</a>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-    <script src="js/bootstrap.min.js"></script>
-</body>
+      <section id="topo" class="bg-warning" style="height: 70vh;"><h1>Topo</h1></section>
+
+      <section id="trabalhos" class="" style="height: 70vh;">
+
+      </section>
+
+
+      <section id="quemSou" class="bg-light row justify-content-center align-items-center">
+        <div class="col-4 text-end">
+            <img src="assets/images/perfil.png" class="img-fluid" style="max-width: 500px;" alt="Imagem de perfil">
+        </div>
+        <div class="col-3">
+            <h1>Gabriel Luna</h1>
+            <h3>Professor e Desenvolvedor Full-Stack</h3>
+            <p>Formação Técnica em Informática para Internet (Desenvolvimento Web) pelo Senac Penha e estudante de Análise e Desenvolvimento de Sistemas pela Cruzeiro do Sul Virtual.</p>
+            <p>Nas horas vagas, atuo como músico multiinstrumentista e também como goleiro de futebol.</p>
+            <div>
+                <a href="https://www.linkedin/in/lunagabri" target="_blank" class="btn btn-primary" role="button"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.youtube.com/@webine" target="_blank" class="btn btn-danger" role="button"><i class="bi bi-youtube"></i></a>
+                <a href="https://www.instagram.com/gabriel.luna87/" target="_blank" class="btn btn-secondary" role="button"><i class="bi bi-instagram"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=5511991541717&text=Olá%21+Estou+a+procura+de+serviços+digitais.+Como+vocês+podem+me+ajudar%3F&type=phone_number&app_absent=0" target="_blank" class="btn btn-success" role="button"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://webine.com.br" target="_blank" class="btn btn-dark" role="button"><i class="bi bi-link-45deg"></i> Website</a>
+            </div>
+        </div>
+        <div class="col-4">
+            <h1>Linguagens e Tecnologias</h1>
+            <ul>
+                <li>HTML e CSS</li>
+                <li>WordPress</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Banco de Dados (SQL)</li>
+                <li>Node Js</li>
+                <li>React Js</li>
+                <li>jQuery</li>
+            </ul>
+        </div>
+      </section>
+
+      <section id="contato" class="bg-light p-5">
+        
+        <div class="container ">
+            <h1>Entre em Contato</h1>
+
+            <form class="row g-3">
+                <div class="col-12">
+                  <label for="nome" class="form-label">Nome Completo</label>
+                  <input type="name" class="form-control" id="nomeForm">
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="emailForm">
+                </div>
+                <div class="col-md-6">
+                  <label for="telefone" class="form-label">Telefone</label>
+                  <input type="tel" class="form-control" id="telefoneForm">
+                </div>
+                <div class="col-md-12">
+                  <label for="mensagem" class="form-label">Mensagem</label>
+                  <textarea class="form-control" id="mensagemForm" rows="4"></textarea>
+                </div>
+               
+                <div class="col-12">
+                  <button type="submit" class="btn btn-success">Enviar</button>
+                </div>
+            </form>
+        </div>
+        
+      </section>
+
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/script.js"></script>
+    </body>
 </html>
